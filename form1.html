@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+      <title>
+        FORM STYLE AND VALIDATION
+      </title>
+      
+      <link rel="stylesheet" type="text/css" href="form1.css">
+  </head>
+    
+    <body>
+    <!--screen is the background-->
+       
+            <!--here comes main form-->
+    <form onsubmit="return validate()" action="form.html" id="form">
+        <div>
+        <h1 id="header">Contact Form</h1>
+        <h2 class="heading">Enter Your Name</h2>
+        <input id="uname" placeholder="username" type="text" ><br>
+        
+        <span class="msg">please enter user name</span><br>
+       
+        
+        <h2 class="heading">Enter Your Password</h2>
+        <input id="password" placeholder="password" type="password" ><br>
+         <span class="msg" >please enter password </span><br>
+        <span class="msg">your password is too short </span><br>
+         <h2 class="heading">Enter Your Adress</h2>
+        <textarea id="txtarea" placeholder=" Adress" ></textarea> <br>
+        <span class="msg" >please enter your adress</span><br>
+        <h2 class="heading">Enter Your date of birth</h2>
+         <input id="dob" placeholder="dd-mm-yy" type="text" ><br>
+        <br>
+        <span class="msg" >please enter your date of birth</span><br><br><br><br><br><br>
+            <div class=souvik>
+        <button type="submit" id="submit">Submit</button>
+            </div>
+      </div>
+        </form>
+            <!--javascript file is attached here-->
+        <script src="form1.js">
+        </script>
+         
+    </body>
+</html>
